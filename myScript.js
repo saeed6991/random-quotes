@@ -15,7 +15,7 @@ function apiHandle() {
   return $.ajax({
     method: "GET",
     url: "https://api.api-ninjas.com/v1/quotes?category=" + category,
-    headers: { "X-Api-Key": "K6IK4sp8PuURoXxcDBxtew==NqfnmXRVT8ibMUFX" },
+    headers: { "X-Api-Key": "my key (get your own at https://api-ninjas.com/api/quotes)" },
     contentType: "application/json",
     success: function (result) {
       category = result[0].category;
